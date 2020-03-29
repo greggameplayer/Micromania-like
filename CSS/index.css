@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+#fiche
+{
+    display: flex;
+    flex-direction: row;
+    height: 127vh;
+}
+
+header {
+	background: linear-gradient(90deg, green, blue);
+    box-shadow: 0 3px 3px;
+    min-height: 10vh;
+    max-height: 10vh;
+    width: 100%;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+footer {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+	flex-direction: column;
+    flex-wrap: wrap;
+    height: 5vh;
+    width: 100%;
+	background: linear-gradient(90deg, lightgreen, lightblue);
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+	margin:0px 0;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+main {
+	flex-grow:1;
+}
+
+#cart
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 11vh;
+    right: 1vw;
+    background-color: #f2f2f2;
+    box-shadow: lightgrey 3px 3px 3px;
+    border-radius: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    z-index: 10;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+#totalcart
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#dustbinallitems
+{
+    align-self: center;
+    position: absolute;
+    top : initial;
+    right: 1vw;
+    height: 3vh;
+    width: 1.5vw;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+#dustbinallitems:hover
+{
+    filter: invert(26%) sepia(12%) saturate(2809%) hue-rotate(314deg) brightness(107%) contrast(102%);
+}
+
+#carth2
+{
+    align-self: center;
+    background: linear-gradient(90deg,blue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#buydiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+#qtbuylabel
+{
+    align-self: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.dustbins
+{
+    height: 4vh;
+    width: 2vw;
+    align-self: center;
+    position: absolute;
+    top: initial;
+    right: 1vw;
+}
+
+.dustbinimgs
+{
+    width: 100%;
+    height: 100%;
+}
+
+.dustbinimgs:hover
+{
+    filter: invert(79%) sepia(32%) saturate(1111%) hue-rotate(55deg) brightness(94%) contrast(81%);
+}
+
+#cartlist
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cartitems
+{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.qtdivs
+{
+    align-self: center;
+    margin-right: 1vw;
+    white-space: nowrap;
+}
+
+#cart hr
+{
+    width: 15vw;
+}
+
+#maindiv
+{
+    display: flex;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+#cover
+{
+    max-width: 30vw;
+    min-width: 5vw;
+    max-height: 70vh;
+    min-height: 5vh;
+}
+
+.articles
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    background-color: #f2f2f2;
+    box-shadow: lightgrey 3px 3px 3px;
+    border-radius: 10px;
+    max-height: 75vh;
+}
+
+.qtinputitems
+{
+	width: 5vw;
+}
+
+#title
+{
+    background: linear-gradient(90deg,blue, green);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+-webkit-text-stroke-color: #fff;
+}
+
+@supports (-moz-appearance: none ){
+    /* Add non-firefox CSS code here */
+    #title
+    {
+        background: linear-gradient(90deg,white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait){
+    .articles
+    {
+        margin-bottom: 2vh;
+    }
+
+    #cart
+    {
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    #return
+    {
+        width: 15vw;
+        height: 3vh;
+        font-size: 1.7em;
+    }
+
+    .buttonarticles
+    {
+        margin-top: 2vh;
+        width: 20vw;
+        height: 4vh;
+        font-size: 1.7em;
+    }
+
+    .particles
+    {
+        font-size: 1.7em;
+    }
+
+    .articles h2
+    {
+        font-size: 2.5em;
+    }
+
+    #copyright
+    {
+        font-size: 1.7em;
+    }
+
+    #title
+    {
+        font-size: 3em;
+        background: linear-gradient(90deg,white, grey);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    #buybt
+    {
+        width: 15vw;
+        height: 3vh;
+        font-size: 1.7em;
+    }
+
+    #qtbuylabel, #description
+    {
+        font-size: 1.8em;
+    }
+
+    #price
+    {
+        font-size: 2em;
+    }
+
+    #releasedate
+    {
+        font-size: 1.5em;
+    }
+
+    #qtbuyinput
+    {
+        width: 6vw;
+        font-size: 1.7em;
+    }
+
+    #ficheright h3:not(#releasedate)
+    {
+        font-size: 2em;
+    }
+
+    #ficheright h3:first-of-type
+    {
+        font-size: 1.8em;
+    }
+
+    #ficheright ul
+    {
+        font-size: 1.8em;
+    }
+
+    #gametitle
+    {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape){
+    .articles
+    {
+        max-height: 85vh;
+        margin-bottom: 2vh;
+    }
+
+    #fiche
+    {
+        height: 165vh;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	#fiche
+	{
+		height: 137vh;
+	}
+  
+}
+
+.particles
+{
+    margin-bottom: -0.5vh;
+}
+
+.imgarticles
+{
+    height: 50vh;
+    width: auto;
+}
+
+.cartitems img:not(.dustbinimgs)
+{
+    height: 15vh;
+    width: auto;
+}
+
+#ficheleft
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48vw;
+    height: 100%;
+}
+
+#ficheright
+{
+    display: flex;
+    flex-direction: column;
+    width: 48vw;
+}
+#gametitle
+{
+    background: linear-gradient(blue, darkblue);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#price
+{
+    font-style: italic;
+}
+
+#releasedate
+{
+    font-size: 0.85em;
+}
+
+#description
+{
+    color: grey;
+}
+
+#tablediv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+}
+
+#return
+{
+    position: absolute;
+    top: initial;
+    left: 2vw;
+}
+
+#shoppingcart
+{
+    position: absolute;
+    top: initial;
+    right: 2vw;
+    height: 8vh;
+    width: auto;
+}
+
+#shoppingcart:hover
+{
+    filter: invert(79%) sepia(32%) saturate(1111%) hue-rotate(55deg) brightness(94%) contrast(81%);
+}
+
+#shoppingcart:active
+{
+    animation: boing 300ms ease-in-out;
+}
+
+@keyframes boing {
+    15%, 40%, 75%, 100% {
+        transform-origin: center center;
+    }
+    15% {
+        transform: scale(1.2, 1.1);
+    }
+    40% {
+        transform: scale(0.95, 0.95);
+    }
+    75% {
+        transform: scale(1.05, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#copyright
+{
+    font-style: italic;
+    background: linear-gradient(90deg,blue, green);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#descriptiontitle, #InfoTitle
+{
+    background: linear-gradient(blue, green);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+#nextproduct
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 10vw;
+    height: 7vh;
+    background: linear-gradient(90deg, blue, green);
+    border: solid white 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: initial;
+    right: 2vw;
+}
+
+#link
+{
+    color: white;
+}
+#link:hover
+{
+    color: blue;
+}
+
+.tabimg
+{
+    display: flex;
+    max-width: 90vw;
+    min-width:  5vw;
+    max-height: 30vh;
+    min-height: 5vh;
+}
+
+tr
+{
+    display: flex;
+}
+
+tr img
+{
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.79);
+}
+
+#ptotal
+{
+    white-space: nowrap;
+}
+
+#inputsinscription
+{
+    display: flex;
+    flex-direction: column;
+}
+#inputsinscription div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#inputsinscription label
+{
+    margin-right: 1vw;
+}
+
+#inputsinscription input
+{
+    margin-bottom: 1vh;
+}
+
+#actionsinscription
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+#submitinscription
+{
+    width: 10vw;
+    font-size: 1.2em;
+}
+#actionsinscription input
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inscriptionform
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#dashboardnav
+{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction : row;
+    background-color: lightgreen;
+
+}
+
+.dashboardbuttons
+{
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+}
